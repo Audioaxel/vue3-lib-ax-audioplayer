@@ -1,5 +1,5 @@
-import TestComponent from "./components/TestComponent.vue";
+import { AXMainButton } from './components/AXMainButton.vue';
 
 export {
-  TestComponent,
+  AXMainButton,
 };

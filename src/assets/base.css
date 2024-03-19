@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #5b2843;
+  --primary-color-accent-bright: #5b2843dc;
+  --primary-white: #fafafa;
+  --primary-black: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Cascadia Code', monospace;
+  color: var(--primary-black);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
+@font-face {
+  font-family: 'Fira Code', monospace;
+  src: url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+}
+
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  src: url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+}
