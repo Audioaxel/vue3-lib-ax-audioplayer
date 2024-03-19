@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import AXMainButton from '@lib/components/AXMainButton.vue';
+import AXPlayer from '@lib/components/AXPlayer.vue';
+import { ref } from 'vue';
 import { AXGap, AXGlobalStyle, AXSection, AXText } from 'vue3-lib-ax-basics';
+
+const showPlayerMenu = ref(false);
 
 </script>
 
@@ -30,14 +33,15 @@ import { AXGap, AXGlobalStyle, AXSection, AXText } from 'vue3-lib-ax-basics';
         }"
         style="padding: 24px;"
         >
-        <h4>Jo Bruder</h4>
-        <AXText>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita facere vero minus necessitatibus magnam consequuntur molestias, deserunt repellendus est obcaecati quae tenetur consectetur debitis aliquam accusamus, illo neque, rem adipisci qui! Reprehenderit blanditiis quis incidunt, quisquam voluptate atque sint velit aperiam temporibus non doloribus inventore, dolore hic nihil veritatis error!
-        </AXText>
-        <h4>Jo Sister</h4>
-        <AXText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor vel voluptas iste repudiandae nobis amet quo deserunt sunt nam.
-        </AXText>
+          <h4>Jo Bruder</h4>
+          <AXText>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita facere vero minus necessitatibus magnam consequuntur molestias, deserunt repellendus est obcaecati quae tenetur consectetur debitis aliquam accusamus, illo neque, rem adipisci qui! Reprehenderit blanditiis quis incidunt, quisquam voluptate atque sint velit aperiam temporibus non doloribus inventore, dolore hic nihil veritatis error!
+          </AXText>
+          <h4>Jo Sister</h4>
+          <AXText>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor vel voluptas iste repudiandae nobis amet quo deserunt sunt nam.
+          </AXText>
+          Test: {{ showPlayerMenu }}
         </AXGap>
       </AXSection>
     </main>
@@ -49,12 +53,10 @@ import { AXGap, AXGlobalStyle, AXSection, AXText } from 'vue3-lib-ax-basics';
       >
       </AXSection>
     </footer>
-    <AXMainButton @click="{
-      console.log('clicked');
-    }">
+    <AXPlayer>
       <template #icon>
         <img src="./assets/logo-color-white.svg" />
       </template>
-    </AXMainButton>
+    </AXPlayer>
   </AXGlobalStyle>
 </template>

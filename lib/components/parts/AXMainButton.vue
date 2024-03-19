@@ -28,9 +28,9 @@ defineEmits<{
   position: fixed;
   bottom: 2vh;
   right: 2vw;
-  height: 64px;
-  width: 64px;
-  z-index: 1000;
+  height: 128px;
+  width: 128px;
+  z-index: 1001;
   background-color: var(--primary-color);
   opacity: 1;
   border-radius: 50%;
